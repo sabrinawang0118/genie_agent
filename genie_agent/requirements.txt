@@ -1,0 +1,8 @@
+mlflow
+databricks-sdk
+databricks-vectorsearch
+langchain
+databricks-genai-inference
+databricks-langchain
+unitycatalog-ai[databricks]
+unitycatalog-langchain[databricks]
