@@ -20,7 +20,8 @@ def main():
         registered_model_name=MODEL_NAME,
         # This is important for the ChatAgent interface
         input_example=[{"messages": [{"role": "user", "content": "What are the top 5 products by sales?"}]}],
-        pip_requirements="requirements.txt"
+        # We can simplify the requirements since we are not using the custom tools for now
+        pip_requirements=["mlflow", "databricks-sdk", "databricks-langchain"]
     )
 
     print(f"Agent logged and registered as '{MODEL_NAME}' in Unity Catalog.")
